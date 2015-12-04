@@ -11,7 +11,6 @@
 
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/compass.js"></script>
-    <link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css">
     <link rel="stylesheet" href="css/compass.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/app.css"/>
 
@@ -394,14 +393,29 @@
     </div>
 
 <div data-role="page" id="page6">
-    <div data-role="header">
+
+    <div data-role="header"><a href="#page6" data-icon="home" data-iconpos="notext"></a>
+
         <h1>Compass</h1>
     </div>
+
+
+
     <div data-role="content">
         <div id=compass></div>
         <div id=needle></div>
         <div id=info-panel></div>
     </div>
+
+    <div data-role="row">
+        <ul data-role="listview">
+            <li><a href="#page2">Spokane</a></li>
+            <li><a href="#page3">Idaho</a></li>
+            <li><a href="#page4">Hiking Tips</a></li>
+            <li><a href="#page5">Contact Us</a></li>
+        </ul>
+    </div>
+
     <div data-role="footer" data-position="fixed">
         <select data-role="slider" name="control" id="control">
             <option value="on">Run</option>
